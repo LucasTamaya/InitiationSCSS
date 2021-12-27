@@ -28,4 +28,30 @@
   color: red;
 }
 
+.boxP {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 450px;
+  background-color: salmon;
+}
+
+.boxE {
+  width: 250px;
+  height: 150px;
+  background-color: sandybrown;
+}
+
+.titre, .titreExtend {
+  font-size: 25px;
+  font-weight: bold;
+  color: red;
+}
+
+.titreExtend {
+  color: purple;
+  letter-spacing: 20px;
+}
+
 /*# sourceMappingURL=style.css.map */

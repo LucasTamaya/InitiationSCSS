@@ -39,3 +39,40 @@ $detail-color: pink;
         }
     }
 }
+
+// Mixin: permet de réutiliser des bouts de codes sans se répéter
+// ici, on décrit l'ensemble des propriétés de notre mixin qui a pour nom "flexMidle"
+@mixin flexMidle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxP{
+    // ici, on intègre notre @mixin avec @include suivit du nom de notre mixin
+    @include flexMidle;
+    width: 500px;
+    height: 450px;
+    background-color: salmon;
+}
+
+.boxE{
+    width: 250px;
+    height: 150px;
+    background-color: sandybrown;
+}
+
+// Extend: permet d'étendre les props d'une classe vers une autre et d'en rajouter si souhaité
+// ici, on a notre premier classe avec les props suivantes:
+.titre{
+    font-size: 25px;
+    font-weight: bold;
+    color: red;
+}
+
+.titreExtend{
+    // ici, on étend les props de la classe .titre
+    @extend .titre;
+    color: purple;
+    letter-spacing: 20px;
+}
