@@ -1,0 +1,41 @@
+// Déclaration de variable
+$primary-color: red;
+$secondary-color: blue;
+$detail-color: pink;
+
+
+.item{
+    color: $primary-color; // Utilisation de variable
+}
+
+.contNav{
+    background-color: $secondary-color;
+    // Nesting d'élément (comme la classe .nav se situe à l'intérieur de la classe .contNav)
+    .item{
+        width: fit-content;
+        background-color: $detail-color;
+        padding: 20px;
+
+        li{
+            list-style-type: none;
+        }
+    }
+}
+
+.hoverNav{
+    background-color: $primary-color;
+
+    .hover{
+        background-color: $secondary-color;
+
+        li{
+            color: $detail-color;
+
+            // &: permet d'ajouter des évènement comme :hover, ::after etc ... Sans a voir à tout re écrire
+            &:hover{
+                font-size: 50px;
+                color: $primary-color;
+            }
+        }
+    }
+}

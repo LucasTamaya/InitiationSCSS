@@ -1,0 +1,31 @@
+.item {
+  color: red;
+}
+
+.contNav {
+  background-color: blue;
+}
+.contNav .item {
+  width: fit-content;
+  background-color: pink;
+  padding: 20px;
+}
+.contNav .item li {
+  list-style-type: none;
+}
+
+.hoverNav {
+  background-color: red;
+}
+.hoverNav .hover {
+  background-color: blue;
+}
+.hoverNav .hover li {
+  color: pink;
+}
+.hoverNav .hover li:hover {
+  font-size: 50px;
+  color: red;
+}
+
+/*# sourceMappingURL=style.css.map */
